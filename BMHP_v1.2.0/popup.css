@@ -1,0 +1,242 @@
+/* 基础样式 */
+body {
+    width: 400px;
+    padding: 15px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+.container {
+    position: relative; /* 为版本号定位提供参考 */
+}
+
+/* 版本号样式 */
+.version-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 11px;
+    color: #666;
+    padding: 5px 0;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-top: 20px; /* 为版本号留出空间 */
+}
+
+/* 输入区域样式 */
+.input-section {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+}
+
+.input-row {
+    margin-bottom: 10px;
+}
+
+.color-input-row {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.color-picker {
+    width: 40px;
+    height: 30px;
+    padding: 2px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* 按钮样式 */
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: background-color 0.2s;
+}
+
+.add-btn {
+    background-color: #4CAF50;
+    color: white;
+    flex: 1;
+}
+
+.add-btn:hover {
+    background-color: #45a049;
+}
+
+.update-btn {
+    background-color: #2196F3;
+    color: white;
+    flex: 1;
+}
+
+.update-btn:hover {
+    background-color: #0b7dda;
+}
+
+.cancel-btn {
+    background-color: #f44336;
+    color: white;
+    flex: 1;
+}
+
+.cancel-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* 列表样式 */
+.section-label {
+    font-weight: bold;
+    margin: 15px 0 5px;
+    color: #555;
+}
+
+.mapping-list {
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.mapping-item {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.mapping-item:last-child {
+    border-bottom: none;
+}
+
+.mapping-item.editing {
+    background-color: #fff8e1;
+}
+
+.search-term, .mapped-term {
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.arrow {
+    color: #999;
+    font-weight: bold;
+}
+
+/* 操作按钮 */
+.action-buttons {
+    display: flex;
+    gap: 5px;
+    margin-left: auto;
+    min-width: 60px;
+}
+
+.action-buttons button {
+    padding: 3px 6px;
+    font-size: 12px;
+}
+
+.edit-btn {
+    background-color: #2196F3;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+/* 底部操作按钮 */
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.export-btn, .import-btn, .clear-btn {
+    padding: 6px 10px;
+    font-size: 12px;
+}
+
+.export-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.import-btn {
+    background-color: #ff9800;
+    color: white;
+}
+
+.clear-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+/* 空状态样式 */
+.empty-state {
+    padding: 20px;
+    text-align: center;
+    color: #999;
+    font-style: italic;
+}
+
+/* 状态消息样式 */
+.status-message {
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.status-message.success {
+    background-color: #dff0d8;
+    color: #3c763d;
+}
+
+.status-message.error {
+    background-color: #f2dede;
+    color: #a94442;
+}
+    

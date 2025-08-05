@@ -1,0 +1,17 @@
+.multi-find-highlight.search-term {
+    background-color: #fff34d !important;
+    padding: 0 2px !important;
+    border-radius: 2px !important;
+    font-weight: bold !important;
+    color: #000 !important;
+    text-decoration: none !important;
+}
+
+.multi-find-highlight.mapped-term {
+    background-color: #4dd0e1 !important;
+    padding: 0 2px !important;
+    border-radius: 2px !important;
+    font-weight: bold !important;
+    color: #000 !important;
+    text-decoration: none !important;
+}
